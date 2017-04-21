@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>质量维度管理类别</title>
+    <link rel="stylesheet" type="text/css" href="../../bootstrap/css/bootstrap.min.css">
+    <script src="../../jquery/jquery-3.2.0.min.js"></script>
+    <script src="../../bootstrap/js/bootstrap.min.js"></script>
+</head>
+<body>
+<div class="container" style="position: absolute;top: 5%">
+    <div class="row">
+        <form role="form" class="col-lg-offset-2 col-md-offset-2 col-sm-offset-2 col-xs-offset-2">
+            <div class="form-group">
+                <label >请选择方法所属维度：</label>
+                <select class="form-control"style="width: 80%">
+                    <option selected>完整性</option>
+                    <option>丰富性</option>
+                </select>
+                <label >请选择该方法所属子维度：</label>
+                <select class="form-control"style="width: 80%">
+                    <option selected>属性完整性</option>
+                    <option>记录完整性</option>
+                    <option>关系完整性</option>
+                </select>
+                <label class="control-label">请输入该评估方法名称：</label>
+                <input type="text" class="form-control" style="width: 80%">
+                <label class="control-label">请该子维度计算公式以及说明：</label>
+                <textarea class="form-control" style="width: 80%"></textarea>
+                <div class="form-inline" style="margin-top: 2%">
+                <label class="control-label">请上传该方法的函数文件：</label>
+                    <input type="file" class="form-control">
+                </div>
+                <label class="control-label">输入该函数的参数：</label>
+                <table class="table table-bordered table-responsive" style = "width: 80%">
+                    <thead>
+                    <tr>
+                        <th>形参编号</th>
+                        <th>形参名称</th>
+                        <th>形参类型</th>
+                        <th>形参说明</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>形参1</td>
+                        <td>int</td>
+                        <td>数量</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>形参2</td>
+                        <td>String</td>
+                        <td>文件名</td>
+                    </tr>
+                    </tbody>
+                </table>
+                <button type="button" class="btn btn-primary">保存并上传函数文件</button>
+            </div>
+        </form>
+    </div>
+
+</div>
+</body>
+</html>

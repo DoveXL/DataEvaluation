@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>抽样方法</title>
+    <link rel="stylesheet" type="text/css" href="../../bootstrap/css/bootstrap.min.css">
+    <script src="../../jquery/jquery-3.2.0.min.js"></script>
+    <script src="../../bootstrap/js/bootstrap.min.js"></script>
+</head>
+<body>
+<div class="container" style="position:absolute;top: 5%">
+    <div class="row">
+        <form role = form class="col-lg-offset-2 col-md-offset-2 col-xs-offset-2 col-sm-offset-2">
+            <div class="form-group">
+                <label class="control-label">请输入抽样方法的名称：</label>
+                <input type="text" class="form-control" style="width: 80%">
+                <label class="control-label">请输入该抽样方法的描述：</label>
+                <textarea class="form-control" style="width: 80%"></textarea>
+                <label class="control-label">请导入抽样方法对应的函数：</label>
+                <input type="file" class="form-control" style="width: 80%">
+                <label class="control-label">该函数的参数：</label>
+                <table class="table table-bordered table-responsive" style = "width: 80%">
+                    <thead>
+                    <tr>
+                        <th>形参编号</th>
+                        <th>形参名称</th>
+                        <th>形参类型</th>
+                        <th>形参说明</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>抽样比</td>
+                        <td>float</td>
+                        <td>说明1</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>参数2</td>
+                        <td>int</td>
+                        <td>说明2</td>
+                    </tr>
+                    </tbody>
+                </table>
+
+            </div>
+            <div class="form-inliner">
+                <button type="button" class="btn btn-primary">增加</button>
+                <button type="button" class="btn btn-primary">清空</button>
+            </div>
+            <br>
+            <div class="form-group">
+                <table class="table table-bordered" style="width: 80%">
+                    <caption class="control-label">已存在的抽样方法</caption>
+                    <thead>
+                    <tr>
+                        <th>编号</th>
+                        <th>抽样方法名称</th>
+                        <th>方法说明</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>随机采样</td>
+                        <td>说明1</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>系统采样</td>
+                        <td>说明2</td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+            <!--<br>
+            <div class="form-group">
+                <label >请选择要删除的维度类别：</label>
+                <select class="form-control"style="width: 80%">
+                    <option selected>内部属性</option>
+                    <option>外部属性</option>
+                </select>
+                <label class="control-label">该类别描述如下：</label>
+                <textarea class="form-control" style="width: 80%"></textarea>
+                <button type="button" class="btn btn-primary" style="margin-top: 1%">确定删除</button>
+            </div>-->
+        </form>
+    </div>
+
+</div>
+</body>
+</html>

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>模板设定子行业管理</title>
+    <link rel="stylesheet" type="text/css" href="../../bootstrap/css/bootstrap.min.css">
+    <script src="../../jquery/jquery-3.2.0.min.js"></script>
+    <script src="../../bootstrap/js/bootstrap.min.js"></script>
+</head>
+<body>
+<div class="container" style="position:absolute;top: 5%">
+    <div class="row">
+        <form role = form class="col-lg-offset-2 col-md-offset-2 col-xs-offset-2 col-sm-offset-2">
+            <div class="form-group">
+                <label >请选择子行业所属类别：</label>
+                <select class="form-control"style="width: 80%">
+                    <option selected>教育</option>
+                    <option>医疗</option>
+                    <option>金融</option>
+                    <option>信息技术</option>
+                </select>
+                <label class="control-label">请输入子行业名称：</label>
+                <input type="text" class="form-control" style="width: 80%">
+                <label class="control-label">请输入该子行业描述：</label>
+                <textarea class="form-control" style="width: 80%"></textarea>
+            </div>
+            <div class="form-inliner">
+                <button type="button" class="btn btn-primary">增加</button>
+                <button type="button" class="btn btn-primary">清空</button>
+            </div>
+            <br>
+            <div class="form-group">
+                <table class="table table-bordered" style="width: 80%">
+                    <caption class="control-label">已存在的子行业</caption>
+                    <thead>
+                    <tr>
+                        <th>编号</th>
+                        <th>子行业名称</th>
+                        <th>子行业说明</th>
+                        <th>所属分类</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>初等教育</td>
+                        <td>泛指小学等</td>
+                        <td>教育</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>高等教育</td>
+                        <td>泛指高职、本科及以上教育</td>
+                        <td>教育</td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>证券</td>
+                        <td>不知道怎么解释</td>
+                        <td>金融</td>
+                    </tr>
+                    <tr>
+                        <td>4</td>
+                        <td>投资</td>
+                        <td>也不知道怎么解释</td>
+                        <td>金融</td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+            <!--
+            <br>
+            <div class="form-group">
+                <label >请选择要删除的维度类别：</label>
+                <select class="form-control"style="width: 80%">
+                    <option selected>完整性</option>
+                    <option>丰富性</option>
+                </select>
+                <label class="control-label">该维度描述如下：</label>
+                <textarea class="form-control" style="width: 80%"></textarea>
+                <button type="button" class="btn btn-primary" style="margin-top: 1%">确定删除</button>
+            </div>-->
+        </form>
+    </div>
+
+</div>
+</body>
+</html>

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>自动评估度量选择</title>
+    <link rel="stylesheet" type="text/css" href="../../bootstrap/css/bootstrap.min.css">
+    <script src="../../jquery/jquery-3.2.0.min.js"></script>
+    <script src="../../bootstrap/js/bootstrap.min.js"></script>
+</head>
+<body>
+<div class="container" style="position: absolute;top: 5%;">
+    <div class="row">
+        <form role="form" class="col-lg-offset-2 col-md-offset-2 col-sm-offset-2 col-xs-offset-2">
+             <div class="form-group">
+                 <label class="control-label">请选择数据质量评估编号</label>
+                 <select class="form-control"  style="width: 80%">
+                     <option>请选择</option>
+                     <option>00000001</option>
+                     <option>00000002</option>
+                 </select>
+                 <label class="control-label">请输入选取专家人数</label>
+                 <div class="form-inline">
+                     <input type="text" class="form-control" style="width: 70%">
+                     <button type="button" class="form-control">简单抽样</button>
+                 </div>
+                 <br>
+                 <label class="control-label">选取的专家信息</label>
+                 <table class="table table-bordered"  style="width: 80%">
+                     <tr>
+                         <td>序号</td>
+                         <td>姓名</td>
+                         <td>联系方式</td>
+                         <td>E-Mail</td>
+                     </tr>
+                     <tr>
+                         <td>1</td>
+                         <td>孟伟强</td>
+                         <td>13220725625</td>
+                         <td>luckystar112@126.com</td>
+                     </tr>
+                     <tr>
+                         <td>...</td>
+                         <td>...</td>
+                         <td>...</td>
+                         <td>...</td>
+                     </tr>
+                     <tr>
+                         <td>...</td>
+                         <td>...</td>
+                         <td>...</td>
+                         <td>...</td>
+                     </tr>
+                 </table>
+             </div>
+            <button type="button" class="btn btn-primary">确定打包分发</button>
+        </form>
+    </div>
+
+</div>
+</body>
+</html>

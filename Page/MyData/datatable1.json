@@ -1,0 +1,27 @@
+[
+  {
+    "id": 1,
+    "fieldname": "诊断编码",
+    "metricname": "属性完整性"
+  },
+  {
+    "id": 2,
+    "fieldname": "年龄",
+    "metricname": "属性完整性"
+  },
+  {
+    "id": 3,
+    "fieldname":"用药(中药)",
+    "metricname": "属性完整性"
+  },
+  {
+    "id": 4,
+    "fieldname": "年龄",
+    "metricname": "属性规范性"
+  },
+  {
+    "id": 5,
+    "fieldname": "出生年月",
+    "metricname": "属性规范性"
+  }
+]

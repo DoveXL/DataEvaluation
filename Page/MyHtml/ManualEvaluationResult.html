@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>自动评估度量选择</title>
+    <link rel="stylesheet" type="text/css" href="../../bootstrap/css/bootstrap.min.css">
+    <script src="../../jquery/jquery-3.2.0.min.js"></script>
+    <script src="../../bootstrap/js/bootstrap.min.js"></script>
+</head>
+<body>
+<div class="container" style="position: absolute;top: 5%;">
+    <div class="row">
+        <form role="form" class="col-lg-offset-2 col-md-offset-2 col-sm-offset-2 col-xs-offset-2">
+             <div class="form-group">
+                 <label class="control-label">请输入评估专家ID</label>
+                 <input type="text" class="form-control" style="width: 80%">
+                 <label class="control-label">请选择评估的人工评估编号</label>
+                 <select class="form-control"  style="width: 80%">
+                     <option>请选择</option>
+                     <option>00000001_2</option>
+                     <option>00000002_2</option>
+                 </select>
+                 <br>
+                 <label class="control-label">请输入评估结果</label>
+                 <table class="table table-bordered"  style="width: 80%">
+                     <tr>
+                         <td>编号</td>
+                         <td>字段</td>
+                         <td>子维度</td>
+                         <td>结果</td>
+                     </tr>
+                     <tr>
+                         <td>1</td>
+                         <td>年龄</td>
+                         <td>属性完整性</td>
+                         <td>90%</td>
+                     </tr>
+                     <tr>
+                         <td>...</td>
+                         <td>...</td>
+                         <td>...</td>
+                         <td>...</td>
+                     </tr>
+                     <tr>
+                         <td>...</td>
+                         <td>...</td>
+                         <td>...</td>
+                         <td>...</td>
+                     </tr>
+                 </table>
+             </div>
+            <button type="button" class="btn btn-primary">确定输入</button>
+        </form>
+    </div>
+
+</div>
+</body>
+</html>

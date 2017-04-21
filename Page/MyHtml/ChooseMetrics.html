@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>质量维度管理类别</title>
+    <link rel="stylesheet" type="text/css" href="../../bootstrap/css/bootstrap.min.css">
+    <script src="../../jquery/jquery-3.2.0.min.js"></script>
+    <script src="../../bootstrap/js/bootstrap.min.js"></script>
+    <script src="../MyJs/HomeFunction.js"></script>
+</head>
+<body>
+<div class="container" style="position: absolute;top: 5%">
+    <div class="row">
+        <form role="form" class="col-lg-offset-2 col-md-offset-2 col-sm-offset-2 col-xs-offset-2" id="Myform">
+            <div class="form-group" id="clone1">
+                <label >请选择子维度：</label>
+                <div class="form-inline">
+                <select class="form-control"style="width: 60%">
+                    <option selected>属性完整性</option>
+                    <option>记录完整性</option>
+                    <option>关系完整性</option>
+                </select>
+                    <button type="button" class="btn btn-default">增加字段</button>
+                    <button type="button" class="btn btn-default">删除字段</button>
+                </div>
+                <br>
+                <table class="table table-bordered table-responsive" style = "width: 80%" id="MetricTable">
+                    <thead>
+                    <tr>
+                        <th>字段序号</th>
+                        <th>字段名称</th>
+                        <th>形参说明</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>诊断编码</td>
+                        <td>不知道怎么解释</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>出入院</td>
+                        <td>总记录数量</td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>用药(中药)</td>
+                        <td>中药的使用情况</td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+        </form>
+        <div class="col-lg-offset-2 col-md-offset-2 col-sm-offset-2 col-xs-offset-2">
+        <button type="button" class="btn btn-default" onclick="InsertDiv()">继续增加</button>
+            <button type="button" class="btn btn-default" data-toggle="modal" data-target="#MySubAttributes">新建子维度</button>
+            <button type="button" class="btn btn-primary" onclick="InsertDiv()">确认选择</button>
+        </div>
+    </div>
+
+</div>
+<div class="modal fade" id="MySubAttributes" role="dialog" tabindex="-1" aria-labelledby="MyModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg"  style="height: 700px;width: 100%;">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss ="modal" aria-hidden="true">&times;</button>
+            </div>
+            <div class="modal-body" style="height: 600px;">
+                <iframe id="Modaliframe5" width="100%" height="100%" frameborder="0" src="SubAttributes.html"></iframe>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">关闭
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

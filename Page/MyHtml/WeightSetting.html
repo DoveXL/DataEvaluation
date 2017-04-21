@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>质量维度管理类别</title>
+    <link rel="stylesheet" type="text/css" href="../../bootstrap/css/bootstrap.min.css">
+    <!--<link rel="stylesheet" type="text/css" href="../MyJs/JsTable/bootstrap-table.css">-->
+    <script src="../../jquery/jquery-3.2.0.min.js"></script>
+    <script src="../../bootstrap/js/bootstrap.min.js"></script>
+    <script src="../MyJs/HomeFunction.js"></script>
+    <!--<script src="../MyJs/JsTable/bootstrap-table.js"></script>-->
+</head>
+<body>
+<div class="container" style="position: absolute;top: 5%;">
+    <div class="row">
+        <form role = form class="col-lg-offset-2 col-md-offset-2 col-sm-offset-2 col-xs-offset-2" id="form1">
+            <div id="div1">
+            <div class="form-group" style="width: 80%">
+                <label class="control-label" >请选择数据质量评估编号：</label>
+                <select class="form-control">
+                    <option selected>请选择</option>
+                    <option>00000001</option>
+                    <option>00000002</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label class="control-label" >请为每一个维度设置权重：</label>
+                <table class="table table-bordered table-responsive " style = "width: 80%">
+                    <thead>
+                    <tr>
+                        <th>维度序号</th>
+                        <th>维度名称</th>
+                        <th>维度权重</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>完整性</td>
+                        <td>0.5</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>丰富性</td>
+                        <td>0.2</td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>规范性</td>
+                        <td>0.3</td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+                <div class="form-group"  style="width: 80%">
+                    <label class="control-label" >请为维度的子维度设置权重</label>
+                    <select class="form-control">
+                        <option >请选择</option>
+                        <option selected>完整性</option>
+                        <option>一致性</option>
+                        <option>规范性</option>
+                    </select>
+                    <br>
+                    <table class="table table-bordered table-responsive ">
+                        <thead>
+                        <tr>
+                            <th>序号</th>
+                            <th>字段</th>
+                            <th>子维度名称</th>
+                            <th>子维度权重</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>诊断编码</td>
+                            <td>属性完整性</td>
+                            <td>..</td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>年龄</td>
+                            <td>属性完整性</td>
+                            <td>..</td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>用药(中药)</td>
+                            <td>属性完整性</td>
+                            <td>..</td>
+                        </tr>
+                        <tr>
+                            <td>4</td>
+                            <td>诊断编码/年龄/用药(中药)</td>
+                            <td>记录完整性</td>
+                            <td>..</td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
+</body>
+</html>

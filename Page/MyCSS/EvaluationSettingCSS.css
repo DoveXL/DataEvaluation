@@ -1,0 +1,83 @@
+.divtop
+{
+    position: absolute;
+    background-color:  #2b669a;
+    height: 120px;
+    border-bottom-style: solid;
+    border-color: white
+}
+.divleft
+{
+    position: absolute;
+    background-color: #2b669a;
+    top:120px;
+    height: 150%;
+}
+
+.divright
+{
+    position: absolute;
+    left: 16.6% ;
+    top:120px;
+    height: 150%;
+}
+
+.labetop
+{
+    position: absolute;
+    top: 25%;
+    color: white;
+    font-family: 'Microsoft YaHei UI';
+    font-size:xx-large;
+}
+
+
+.tree {
+    position: absolute;
+    left: -10%;
+    color:#46CFB0;
+    width:600px;
+    margin:10px;
+    }
+.tree li,
+.tree li > a,
+.tree li > span {
+    padding: 2pt;
+    border-radius: 4px;
+}
+
+.tree li a {
+    color:#46CFB0;
+    font-size: medium;
+    text-decoration: none;
+    line-height: 10pt;
+    border-radius: 4px;
+
+}
+
+.tree li span
+{
+    color:#46CFB0;
+    font-size: medium;
+    text-decoration: none;
+    line-height: 10pt;
+    border-radius: 4px;
+}
+
+.tree li a:hover {
+    background-color: #34BC9D;
+    color: #fff;
+}
+
+.active {
+    background-color: #34495E;
+    color: white;
+}
+
+.active a {
+    color: #fff;
+}
+
+.tree li a.active:hover {
+    background-color: #34BC9D;
+}

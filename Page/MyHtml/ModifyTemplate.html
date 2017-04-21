@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>质量维度管理类别</title>
+    <link rel="stylesheet" type="text/css" href="../../bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="../MyJs/JsTable/bootstrap-table.css">
+    <script src="../../jquery/jquery-3.2.0.min.js"></script>
+    <script src="../../bootstrap/js/bootstrap.min.js"></script>
+    <script src="../MyJs/HomeFunction.js"></script>
+    <script src="../MyJs/JsTable/bootstrap-table.js"></script>
+</head>
+<body>
+<div class="container" style="position: absolute;top: 5%">
+    <div class="row">
+        <form role="form" class="col-lg-offset-2 col-md-offset-2 col-sm-offset-2 col-xs-offset-2">
+            <div class="form-group">
+                <div class="form-inline" >
+                <label class="control-label">请选择所属行业：</label>
+                <select class="form-control">
+                    <option selected>教育</option>
+                    <option>医疗</option>
+                    <option>金融</option>
+                    <option>信息技术</option>
+                </select>
+                    <label class="control-label" style="margin-left: 3%">请选择子行业：</label>
+                    <select class="form-control">
+                        <option selected>初等教育</option>
+                        <option>高等教育</option>
+                    </select>
+                    <button type="button" class="btn btn-default" data-toggle="modal" data-target="#MyIndustryCategory">添加新行业</button>
+            </div>
+            </div>
+            <div class="form-group">
+                <label class="control-label">请选择模板名称：</label>
+                <select class="form-control" style="width: 80%">
+                    <option selected>模板1</option>
+                    <option>模板2</option>
+                    <option>模板3</option>
+                    <option>模板4</option>
+                </select>
+                <label class="control-label">请输入模板用途：</label>
+                <textarea class="form-control" style="width: 80%;" placeholder="原先的模板用途"></textarea>
+            </div>
+            <div class="form-group" style="width:80%">
+                <div class="form-inline">
+                <label class="control-label">请选择所属类别：</label>
+                    <select class="form-control">
+                        <option selected>内部属性</option>
+                        <option>外部属性</option>
+                        <option>使用属性</option>
+                    </select>
+                    <button type="button" class="btn btn-default" data-toggle="modal" data-target="#MyCategory">添加属性类别</button>
+                </div >
+                <br>
+                <table class="table table-bordered" data-toggle="table" data-url="../MyData/datatable.json">
+                    <thead>
+                    <tr>
+                        <th data-field="state" data-checkbox="true"></th>
+                        <th data-field="id" data-align="center">编号</th>
+                        <th data-field="name" data-align="center">属性名称</th>
+                        <th data-field="description" data-align="center">属性描述</th>
+                    </tr>
+                    </thead>
+                </table>
+                <br>
+                <button type="button" class="btn btn-default" data-toggle="modal" data-target="#MyAttributes">添加维度</button>
+                <button type="button" class="btn btn-primary">保存</button>
+                <button type="button" class="btn btn-primary">另存为</button>
+            </div>
+        </form>
+        <!--模态框-->
+        <div class="modal fade" id="MyIndustryCategory" role="dialog" tabindex="-1" aria-labelledby="MyModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-lg"  style="height: 800px">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss ="modal" aria-hidden="true">&times;</button>
+                    </div>
+                    <div class="modal-body" style="height: 600px;">
+                        <iframe id="Modaliframe" width="100%" height="100%" frameborder="0" src="IndustryCategory.html"></iframe>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">关闭
+                        </button>
+                        <button type="button" class="btn btn-default" data-toggle="modal" data-dismiss="modal" data-target="#MySubIndustryCategory">下一步添加子行业
+                        </button>
+                    </div>
+                </div>
+            </div>
+    </div>
+        <div class="modal fade" id="MySubIndustryCategory" role="dialog" tabindex="-1" aria-labelledby="MyModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-lg"  style="height: 800px">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss ="modal" aria-hidden="true">&times;</button>
+                    </div>
+                    <div class="modal-body" style="height: 600px;">
+                        <iframe id="Modaliframe1" width="100%" height="100%" frameborder="0" src="SubIndustryCategory.html"></iframe>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">关闭
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal fade" id="MyCategory" role="dialog" tabindex="-1" aria-labelledby="MyModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-lg"  style="height: 700px">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss ="modal" aria-hidden="true">&times;</button>
+                    </div>
+                    <div class="modal-body" style="height: 600px;">
+                        <iframe id="Modaliframe2" width="100%" height="100%" frameborder="0" src="Category.html"></iframe>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">关闭
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal fade" id="MyAttributes" role="dialog" tabindex="-1" aria-labelledby="MyModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-lg"  style="height: 700px">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss ="modal" aria-hidden="true">&times;</button>
+                    </div>
+                    <div class="modal-body" style="height: 600px;">
+                        <iframe id="Modaliframe3" width="100%" height="100%" frameborder="0" src="Attributes.html"></iframe>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">关闭
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal fade" id="MyMetric" role="dialog" tabindex="-1" aria-labelledby="MyModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-lg"  style="height: 700px">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss ="modal" aria-hidden="true">&times;</button>
+                    </div>
+                    <div class="modal-body" style="height: 600px;">
+                        <iframe id="Modaliframe4" width="100%" height="100%" frameborder="0" ></iframe>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">关闭
+                        </button>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

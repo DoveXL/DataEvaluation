@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>质量维度管理类别</title>
+    <link rel="stylesheet" type="text/css" href="../../bootstrap/css/bootstrap.min.css">
+    <script src="../../jquery/jquery-3.2.0.min.js"></script>
+    <script src="../../bootstrap/js/bootstrap.min.js"></script>
+    <script src="../MyJs/HomeFunction.js"></script>
+</head>
+<body>
+<div class="container" style="position: absolute;top: 5%">
+    <div class="row">
+        <form role = form class="col-lg-offset-2 col-md-offset-2 col-sm-offset-2 col-xs-offset-2">
+            <div class="form-group">
+                <div class="form-inline">
+                    <label class="control-label">数据质量评估编号：</label>
+                    <label class="control-label" id="labelNumber">待生成</label>
+                    <button type="button" class="btn btn-default" style="margin-left: 10%" onclick="CreateNumber()">点击生成编号</button>
+                </div>
+            </div>
+            <div class="form-inline">
+                 <label class="control-label">请输入送评人员：</label>
+                <input type="text" class="form-control" style="width: 20%">
+                <label class="control-label" style="margin-left: 10%">请输入送评时间：</label>
+                <input type="datetime-local" class="form-control" style="width: 20%">
+            </div>
+            <br>
+            <div class="form-inline">
+                <label class="control-label">请输入送评单位：</label>
+                <input type="text" class="form-control" style="width: 20%">
+                <label class="control-label" style="margin-left: 10%">请输入所属行业：</label>
+                <select class="form-control">
+                    <option selected>教育</option>
+                    <option>医疗</option>
+                    <option>金融</option>
+                    <option>信息技术</option>
+                </select>
+                <select class="form-control">
+                    <option>初等教育</option>
+                    <option>高等教育</option>
+                </select>
+            </div>
+            <br>
+            <div class="form-group">
+                <label class="control-label">请输入本次评估的要求：</label>
+                <textarea class="form-control" style="width: 80%"></textarea>
+            </div>
+            <button type="button" class="btn btn-primary" style="width: 10%">确定</button>
+            <button type="button" class="btn btn-primary" style="width: 10%">重置</button>
+        </form>
+    </div>
+</div>
+</body>
+</html>

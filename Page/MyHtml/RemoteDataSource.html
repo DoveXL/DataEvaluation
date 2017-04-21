@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>质量维度管理类别</title>
+    <link rel="stylesheet" type="text/css" href="../../bootstrap/css/bootstrap.min.css">
+    <script src="../../jquery/jquery-3.2.0.min.js"></script>
+    <script src="../../bootstrap/js/bootstrap.min.js"></script>
+</head>
+<body>
+<div class="container" style="position: absolute;top: 5%">
+    <div class="row">
+        <form role="form" class="col-lg-offset-2 col-md-offset-2 col-sm-offset-2 col-xs-offset-2">
+            <div class="form-group">
+                <label >请选择数据源类别：</label>
+                <select class="form-control"style="width: 80%">
+                    <option >本地数据源</option>
+                    <option selected>远程数据源</option>
+                </select>
+                <label >请选择数据源格式：</label>
+                <select class="form-control"style="width: 80%">
+                    <option selected>Oracle</option>
+                    <option>SQL Server</option>
+                    <option>MySQL</option>
+                    <option>Access</option>
+                </select>
+                <label class="control-label" style="width: 80%">请输入数据库接口地址：</label>
+                <div class="form-inline">
+                <input type="text" class="form-control" style="width: 60%" placeholder="地址">
+                    <input type="text" class="form-control" placeholder="端口" style="width: 20%">
+                </div>
+                <label class="control-label" >请输入数据库用户名：</label>
+                <input type="text" class="form-control" placeholder="用户名" style="width: 80%">
+                <label class="control-label">请输入数据库密码：</label>
+                <input type="password" class="form-control" placeholder="密码" style="width: 80%">
+            </div>
+                <button type="button" class="btn btn-primary"> 连接该数据源</button>
+                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#MyDataSources"> 新建数据源类型</button>
+                <div class="modal fade" id="MyDataSources" role="dialog" tabindex="-1" aria-labelledby="MyModalLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-lg"  style="height: 800px">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <button type="button" class="close" data-dismiss ="modal" aria-hidden="true">&times;</button>
+                            </div>
+                            <div class="modal-body" style="height: 600px;">
+                                <iframe id="Modaliframe" width="100%" height="100%" frameborder="0" src="DataSource.html"></iframe>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-default" data-dismiss="modal">关闭
+                                </button>
+                            </div>
+                        </div>
+            </div>
+                </div>
+        </form>
+    </div>
+
+</div>
+</body>
+</html>

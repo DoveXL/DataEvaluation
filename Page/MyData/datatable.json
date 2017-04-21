@@ -1,0 +1,23 @@
+[
+  {
+    "id": 1,
+    "name": "完整性",
+    "description": "数据完整程度"
+  },
+  {
+    "id": 2,
+    "name": "丰富性",
+    "description": "数据丰富程度"
+  },
+  {
+    "id": 3,
+    "name":"规范性",
+    "description": "数据规范程度"
+  },
+  {
+    "id": 4,
+    "name": "一致性",
+    "description": "数据一致程度"
+  }
+
+]

@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+        <meta charset="UTF-8">
+        <title>数据抽样</title>
+        <link rel="stylesheet" type="text/css" href="../../bootstrap/css/bootstrap.min.css">
+        <script src="../../jquery/jquery-3.2.0.min.js"></script>
+        <script src="../../bootstrap/js/bootstrap.min.js"></script>
+    <script src="../MyJs/HomeFunction.js"></script>
+</head>
+    <style type="text/css">
+        .content{
+            width: 90%;
+            margin: 20px auto;
+        }
+        .button1{
+            margin:20px 0;
+        }
+        .button2
+        {
+            width: 20%;
+            margin: 20px auto;
+        }
+    </style>
+
+<body>
+
+<div class="container" style="position: absolute;top: 5%;">
+    <!-- Button trigger modal -->
+    <div class="row">
+        <form role="form" class="col-lg-offset-2 col-md-offset-2 col-sm-offset-2 col-xs-offset-2" style="width: 80%">
+            <label>请选择数据质量评估编号：</label>
+            <select class="form-control">
+                <option selected>请选择</option>
+                <option >00000001</option>
+                <option >00000002</option>
+            </select>
+        <label class="control-label">请选择数据集：</label>
+        <input type="file" class="form-control">
+            <div>
+                <label class="control-label">该数据集存在的表：</label>
+                <table class="table table-bordered">
+                    <thead>
+                        <th>序号</th>
+                        <th>表名</th>
+                        <th>数据表说明</th>
+                    </thead>
+                    <tr>
+                        <td>...</td>
+                        <td>...</td>
+                        <td>...</td>
+                    </tr>
+                    <tr>
+                        <td>...</td>
+                        <td>...</td>
+                        <td>...</td>
+                    </tr>
+                </table>
+                <label>请选择抽样的数据表：</label>
+                <select class="form-control">
+                    <option selected>请选择</option>
+                    <option >数据表1</option>
+                    <option >数据表2</option>
+                </select>
+            </div>
+
+        <label class="control-label">请选择抽样方法：</label>
+        <div class="form-inline">
+            <select class="form-control" style="width: 86%" id="select1" onchange="SampleModal()">
+              <option selected>请选择</option>
+            <option name="1" value="随机抽样">随机抽样</option>
+            <option name = "2" value="系统抽样">系统抽样</option>
+            <option name="3" value="整群抽样">整群抽样</option>
+        </select>
+            <button type="button" class="btn btn-default" data-toggle="modal" data-target="#MySampleFunction">添加抽样方法</button>
+        </div>
+            <div class="button1">
+                <button type="button" class="btn btn-primary">数据抽样</button>
+            </div>
+            <div>
+                <label class="control-label">抽样结果的展示：</label>
+                <table class="table table-bordered">
+                    <tr>
+                        <td>属性列1</td>
+                        <td>属性列2</td>
+                        <td>属性列3</td>
+                    </tr>
+                    <tr>
+                        <td>...</td>
+                        <td>...</td>
+                        <td>...</td>
+                    </tr>
+                    <tr>
+                        <td>...</td>
+                        <td>...</td>
+                        <td>...</td>
+                    </tr>
+                    <tr>
+                        <td>...</td>
+                        <td>...</td>
+                        <td>...</td>
+                    </tr>
+                </table>
+            </div>
+<div class="button2">
+    <button type="button" class="btn btn-primary">保存抽样结果</button>
+</div>
+</form>
+    </div>
+</div>
+
+<!-- Modal -->
+<div class="modal fade" id="myModalSelect" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <label class="modal-title" id="myModalLabel1">参数设定</label>
+            </div>
+            <div class="modal-body">
+                <div class="form-inline">
+                    <label class="control-label">请输入参数1：</label>
+                    <input type="text" class="form-control" style="width: 20%">
+                    <label class="control-label">请输入参数2：</label>
+                    <input type="text" class="form-control" style="width: 20%">
+                </div>
+                <br>
+                <div class="form-inline">
+                    <label class="control-label">请输入参数3：</label>
+                    <input type="text" class="form-control" style="width: 20%">
+                    <label class="control-label">请输入参数4：</label>
+                    <input type="text" class="form-control" style="width: 20%">
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary">确定</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="modal fade" id="MySampleFunction" role="dialog" tabindex="-1" aria-labelledby="MyModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg"  style="height: 700px">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss ="modal" aria-hidden="true">&times;</button>
+            </div>
+            <div class="modal-body" style="height: 600px;">
+                <iframe id="Modaliframe4" width="100%" height="100%" frameborder="0" src="SamplingFunction.html"></iframe>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">关闭
+                </button>
+
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

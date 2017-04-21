@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>评估主页</title>
+    <link rel="stylesheet" type="text/css" href="../../bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="../MyJs/JsTree/jquery.treemenu.css">
+    <link rel="stylesheet" type="text/css" href="../MyCSS/EvaluationSettingCSS.css">
+    <script src="../../jquery/jquery-3.2.0.min.js"></script>
+    <script src="../../bootstrap/js/bootstrap.min.js"></script>
+    <script src ="../MyJs/JsTree/jquery.treemenu.js"></script>
+    <script src="../MyJs/HomeFunction.js"></script>
+
+  </head>
+<body>
+<!--<button type="button" class="btn btn-danger">警告</button>-->
+<div class=" col-lg-12 col-sm-12 col-md-12 divtop" >
+    <label class="labetop">通用数据质量评估工具</label>
+    <a style="color: white; position: absolute;left: 70%;top: 80%">欢迎XXX登录</a>
+    <a style="color: white;position: absolute;left: 80%;top: 80%">个人信息</a>
+    <a style="color: white;position: absolute;left: 90%;top: 80%">修改密码</a>
+</div>
+<div>
+    <div class="col-lg-2 col-sm-2 col-md-2 divleft">
+        <ul class="tree">
+            <!--质量维度管理-->
+            <li><span>质量维度管理</span>
+                <ul>
+                    <li><a href="#" onclick="ToCategory()">类别</a></li>
+                    <li><a href="#" onclick="ToAttributes()">维度</a></li>
+                    <li><a href="#" onclick="ToSubAttributes()">子维度</a></li>
+                    <li><a href="#" onclick="ToMetrics()">度量指标</a></li>
+                </ul>
+            </li>
+            <!--评估模板设定-->
+            <li><span>评估模板设定</span>
+                <ul>
+                    <li><a href="#" onclick="ToIndustryCategory()">行业类别</a></li>
+                    <li><a herf ="#" onclick="ToSubIndustryCategory()">行业子类别</a></li>
+                    <li><a href="#" onclick="ToCreateTemplate()">增加模板</a></li>
+                    <li><a href="#" onclick="ToModifyTemplate()">修改模板</a></li>
+
+                </ul>
+            </li>
+            <!--评估信息设定-->
+            <li><span>评估信息设定</span>
+                <ul>
+                    <li><a href="#" onclick="ToEvaluationInfoSet()">基本信息设定</a></li>
+                </ul>
+            </li>
+            <!--数据导入管理-->
+            <li><span>数据导入管理</span>
+                <ul>
+                    <!--<li><a href="#" onclick="ToDataSource()">数据源配置管理</a>-->
+                    <li><a href="#" onclick="ToLocalDataSource()">本地数据导入</a>
+                    </li>
+                    <li><a href="#" onclick="ToRemoteDataSource()">远程数据导入</a>
+                    </li>
+                </ul>
+            </li>
+            <!--数据抽样管理-->
+            <li><span>数据抽样管理</span>
+            <ul>
+                <li><a href="#" onclick="ToSamplingFunction()">抽样方法设定</a>
+                </li>
+                <li><a href="#" onclick="ToSampling()">抽样结果显示及保存</a>
+                </li>
+            </ul>
+        </li>
+            <!--评估设定-->
+            <li><span>评估设定</span>
+            <ul>
+                <li><a href="#" onclick="ToDataBinding()">数据绑定</a></li>
+                <li><a href="#" onclick="ToWeightSetting()">权重设定</a></li>
+            </ul>
+            </li>
+            <!--自动评估-->
+            <li><span>自动评估</span>
+                <ul>
+                    <li><a href="#" onclick="ToChooseMetricsAuto()">评估度量选择</a></li>
+                    <li><a href="#">评估结果展示</a></li>
+                </ul>
+            </li>
+            <!--人工评估-->
+            <li><span>人工评估</span>
+                <ul>
+                    <li><a href="#" onclick="ToChooseMetricsManual()">评估度量选择</a></li>
+                    <li><a href="#" onclick="ToChooseEvaluationPerson()">评估人员选择</a></li>
+                    <li><a href="#" onclick="ToManualEvaluationResult()">评估结果录入</a></li>
+                </ul>
+            </li>
+            <!--结果展示-->
+            <li><span>结果展示</span>
+                <ul>
+                    <li><a href="#">查看评估结果</a></li>
+                    <li><a href="#">数据质量报告</a></li>
+                </ul>
+            </li>
+
+            <li><span>系统管理</span>
+                <ul>
+                    <li><a href="#" onclick="ToPersonManagment()">人员管理</a></li>
+                    <li><a href="#">权限管理</a></li>
+                    <li><a href="#">数据库管理</a></li>
+                    <li><a href="#">数据备份</a></li>
+                    <li><a href="#">数据恢复</a></li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+    <div class=" col-lg-10 col-sm-10 col-md-10 divright">
+        <iframe src="Category.html" width="100%" height="100%" frameborder="0" id="iframe1"></iframe>
+    </div>
+</div>
+</body>
+</html>
