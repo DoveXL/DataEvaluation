@@ -24,79 +24,63 @@
     <div class="col-lg-2 col-sm-2 col-md-2 divleft">
         <ul class="tree">
             <!--质量维度管理-->
-            <li><span>质量维度管理</span>
+            <li><span>质量评估过程</span>
                 <ul>
-                    <li><a href="#" onclick="ToCategory()">类别</a></li>
-                    <li><a href="#" onclick="ToAttributes()">维度</a></li>
-                    <li><a href="#" onclick="ToSubAttributes()">子维度</a></li>
-                    <li><a href="#" onclick="ToMetrics()">度量指标</a></li>
+                    <li><a href="#" onclick="ToEvaluationInfoSet()" >录入基本信息</a></li>
+                    <li><span>导入评估数据</span>
+                         <ul>
+                               <li><a href="#"  onclick="ToLocalDataSource()">导入本地数据库</a></li>
+                               <li><a href="#" onclick="ToRemoteDataSource()">访问远程数据库</a></li>
+                         </ul>
+                    </li>
                 </ul>
             </li>
             <!--评估模板设定-->
-            <li><span>评估模板设定</span>
+            <li><span>实施评估</span>
                 <ul>
-                    <li><a href="#" onclick="ToIndustryCategory()">行业类别</a></li>
-                    <li><a herf ="#" onclick="ToSubIndustryCategory()">行业子类别</a></li>
-                    <li><a href="#" onclick="ToCreateTemplate()">增加模板</a></li>
-                    <li><a href="#" onclick="ToModifyTemplate()">修改模板</a></li>
+                    <li><a href="#" onclick=" ">配置管理</a></li>
+                    <li><a herf ="#" onclick="ToDataBinding()">数据绑定</a></li>
+                    <li><a href="#" onclick="ToAutoEvaluation()">自动评估</a></li>
+                    <li><span>人工评估</span>
+                        <ul>
+                            <li><a href="#" onclick="ToSampling()">数据抽样</a></li>
+                            <li><a href="#" onclick="ToChooseEvaluationPerson()">选择评估人员</a></li>
+                            <li><a href="#" onclick="ToManualEvaluationResult()">录入评估结果</a></li>
+                            <li><a href="#" >显示评估结果</a> </li>
+                        </ul>
+                    </li>
 
                 </ul>
             </li>
             <!--评估信息设定-->
-            <li><span>评估信息设定</span>
+            <li><span>评估结果展示</span>
                 <ul>
-                    <li><a href="#" onclick="ToEvaluationInfoSet()">基本信息设定</a></li>
+                    <li><a href="#" onclick=" ">查看评估结果</a>
+                    </li>
+                    <li><a href="#" onclick=" ">编辑评估报告</a></li>
+                    <li><a href="#" onclick=" ">审核评估报告</a></li>
                 </ul>
             </li>
             <!--数据导入管理-->
-            <li><span>数据导入管理</span>
+            <li><span>质量评估管理</span>
                 <ul>
-                    <!--<li><a href="#" onclick="ToDataSource()">数据源配置管理</a>-->
-                    <li><a href="#" onclick="ToLocalDataSource()">本地数据导入</a>
+                    <li><span>指标体系管理</span>
+                        <ul>
+                            <li><a href="#" onclick="ToAttributes()">维度管理</a></li>
+                            <li><a href="#" onclick="ToSubAttributes()">子维度管理</a></li>
+                        </ul>
                     </li>
-                    <li><a href="#" onclick="ToRemoteDataSource()">远程数据导入</a>
+                    <li><a href="#" onclick="ToIndustryCategory()">领域管理</a></li>
+                    <li><span>模板管理</span>
+                        <ul>
+                            <li><a href="#" onclick="ToCreateTemplate()">新增模板</a></li>
+                            <li><a href="#" onclick=" ">评估规则管理</a></li>
+                            <li><a href="#" onclick="ToModifyTemplate()">编辑模板</a></li>
+                        </ul>
                     </li>
+                    <li><a href="#" onclick="ToSamplingFunction()">抽样方法管理</a></li>
                 </ul>
             </li>
-            <!--数据抽样管理-->
-            <li><span>数据抽样管理</span>
-            <ul>
-                <li><a href="#" onclick="ToSamplingFunction()">抽样方法设定</a>
-                </li>
-                <li><a href="#" onclick="ToSampling()">抽样结果显示及保存</a>
-                </li>
-            </ul>
-        </li>
-            <!--评估设定-->
-            <li><span>评估设定</span>
-            <ul>
-                <li><a href="#" onclick="ToDataBinding()">数据绑定</a></li>
-                <li><a href="#" onclick="ToWeightSetting()">权重设定</a></li>
-            </ul>
-            </li>
-            <!--自动评估-->
-            <li><span>自动评估</span>
-                <ul>
-                    <li><a href="#" onclick="ToChooseMetricsAuto()">评估度量选择</a></li>
-                    <li><a href="#">评估结果展示</a></li>
-                </ul>
-            </li>
-            <!--人工评估-->
-            <li><span>人工评估</span>
-                <ul>
-                    <li><a href="#" onclick="ToChooseMetricsManual()">评估度量选择</a></li>
-                    <li><a href="#" onclick="ToChooseEvaluationPerson()">评估人员选择</a></li>
-                    <li><a href="#" onclick="ToManualEvaluationResult()">评估结果录入</a></li>
-                </ul>
-            </li>
-            <!--结果展示-->
-            <li><span>结果展示</span>
-                <ul>
-                    <li><a href="#">查看评估结果</a></li>
-                    <li><a href="#">数据质量报告</a></li>
-                </ul>
-            </li>
-
             <li><span>系统管理</span>
                 <ul>
                     <li><a href="#" onclick="ToPersonManagment()">人员管理</a></li>

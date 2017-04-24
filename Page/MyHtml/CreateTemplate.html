@@ -46,21 +46,40 @@
                         <option>外部属性</option>
                         <option>使用属性</option>
                     </select>
-                    <button type="button" class="btn btn-default" data-toggle="modal" data-target="#MyCategory">添加属性类别</button>
+                    <select class="form-control">
+                        <option selected>完整性</option>
+                        <option>丰富性</option>
+                        <option>规范性</option>
+                        <option>一致性</option>
+                    </select>
+                    <select class="form-control">
+                        <option selected>属性完整性</option>
+                        <option>记录完整性</option>
+                        <option>关系完整性</option>
+                    </select>
+                    <select class="form-control">
+                        <option selected>诊断编码</option>
+                        <option>年龄</option>
+                        <option>性别</option>
+                    </select>
+                    <button type="button" class="btn btn-default">添加</button>
                 </div >
                 <br>
                 <table class="table table-bordered" data-toggle="table" data-url="../MyData/datatable.json" id="mytab">
                     <thead>
                     <tr>
-                        <th data-field="state" data-checkbox="true"></th>
-                        <th data-field="id" data-align="center">编号</th>
-                        <th data-field="name" data-align="center">属性名称</th>
-                        <th data-field="description" data-align="center">属性描述</th>
+                        <th data-field="fieldname">字段</th>
+                        <th data-field="subattribute">子维度</th>
+                        <th data-field="EvaluateAuto" >自动评估</th>
+                        <th data-field="EvaluateManual">人工评估</th>
+                        <th data-field="method" data-align="center">算法设定</th>
                     </tr>
                     </thead>
                 </table>
                 <br>
                 <button type="button" class="btn btn-default" data-toggle="modal" data-target="#MyAttributes">添加维度</button>
+                <button type="button" class="btn btn-default" data-toggle="modal" data-target="#MySubAttributes">添加子维度</button>
+                <button type="button" class="btn btn-default" >添加字段</button>
                 <button type="button" class="btn btn-primary">保存</button>
             </div>
         </form>
@@ -99,24 +118,6 @@
                 </div>
             </div>
         </div>
-
-        <div class="modal fade" id="MyCategory" role="dialog" tabindex="-1" aria-labelledby="MyModalLabel" aria-hidden="true">
-            <div class="modal-dialog modal-lg"  style="height: 700px">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <button type="button" class="close" data-dismiss ="modal" aria-hidden="true">&times;</button>
-                    </div>
-                    <div class="modal-body" style="height: 600px;">
-                        <iframe id="Modaliframe2" width="100%" height="100%" frameborder="0" src="Category.html"></iframe>
-                    </div>
-                    <div class="modal-footer">
-                        <button type="button" class="btn btn-default" data-dismiss="modal">关闭
-                        </button>
-                    </div>
-                </div>
-            </div>
-        </div>
-
         <div class="modal fade" id="MyAttributes" role="dialog" tabindex="-1" aria-labelledby="MyModalLabel" aria-hidden="true">
             <div class="modal-dialog modal-lg"  style="height: 700px">
                 <div class="modal-content">
@@ -151,23 +152,23 @@
                 </div>
             </div>
         </div>
+        <div class="modal fade" id="MySubAttributes" role="dialog" tabindex="-1" aria-labelledby="MyModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-lg"  style="height: 700px">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss ="modal" aria-hidden="true">&times;</button>
+                    </div>
+                    <div class="modal-body" style="height: 600px;">
+                        <iframe id="Modaliframe5" width="100%" height="100%" frameborder="0" src="SubAttributes.html"></iframe>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">关闭
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 </div>
-<script>
-    $("#mytab").bootstrapTable({
-        onClickRow: function (row) {
-            console.log(row.id);
-            console.log(row.id);
-            if (row.state==true) {
-                ToMetricModal(row);
-            }
-            else
-            {
-                alert("取消");
-
-            }
-        },
-    });
-</script>
 </body>
 </html>
