@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>评估规则管理</title>
+    <link rel="stylesheet" type="text/css" href="../../bootstrap/css/bootstrap.min.css">
+    <script src="../../jquery/jquery-3.2.0.min.js"></script>
+    <script src="../../bootstrap/js/bootstrap.min.js"></script>
+    <script src = "../MyJs/HomeFunction.js"></script>
+</head>
+<body>
+<div class="container">
+    <div class="row">
+        <form class="col-lg-offset-2 col-md-offset-2 col-sm-offset-2 col-xs-offset-2">
+            <div class="form-group">
+                <div class="form-inline" >
+                    <label class="control-label">请选择所属行业：</label>
+                    <select class="form-control">
+                        <option selected>教育</option>
+                        <option>医疗</option>
+                        <option>金融</option>
+                        <option>信息技术</option>
+                    </select>
+                    <label class="control-label" style="margin-left: 3%">请选择子行业：</label>
+                    <select class="form-control">
+                        <option selected>初等教育</option>
+                        <option>高等教育</option>
+                    </select>
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="control-label">请选择模板名称：</label>
+                <select class="form-control" style="width: 80%">
+                    <option selected>模板1</option>
+                    <option>模板2</option>
+                    <option>模板3</option>
+                    <option>模板4</option>
+                </select>
+                <label class="control-label">请选择度量指标：</label>
+                <select class="form-control" style="width: 80%">
+                    <option selected>诊断编码完整性</option>
+                    <option>性别完整性</option>
+                    <option>年龄完整性</option>
+                    <option>年龄规范性</option>
+                </select>
+            </div>
+            <label class="control-label">请选择评估规则类型</label>
+            <div class="form-inline">
+                <input type="radio" name="type1"  onchange="displayform()" id="radio1">标准数据集
+                <input type="radio" name="type1" style="margin-left: 2%" id="radio2" onchange="displayform1()">正则表达式
+            </div>
+            <br>
+            <div class="form-group" id="Myform" style="display:none;">
+                 <label>请输入标准数据集文件：</label>
+                <input type="file" class="form-control" style="width: 80%;margin-bottom: 1%" id="clone1">
+            </div>
+            <div class="form-group" id="Myform1" style="display: none">
+                <label>请输入正则表达式：</label>
+                <input type="text" class="form-control" style="width: 80%;margin-bottom: 1%" id="clone2">
+            </div>
+            <button type="button" class="btn btn-default" style="margin-top: 1%;display: none" id="radiobtn1" onclick="InsertDiv()">增加</button>
+            <button type="button" class="btn btn-default" style="margin-top: 1%;display: none" id="radiobtn2" onclick="InsertDiv1()">增加</button>
+        </form>
+    </div>
+</div>
+</body>
+</html>
