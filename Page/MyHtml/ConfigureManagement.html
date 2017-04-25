@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>配置管理</title>
+    <link rel="stylesheet" type="text/css" href="../../bootstrap/css/bootstrap.min.css">
+    <script src="../../jquery/jquery-3.2.0.min.js"></script>
+    <script src="../../bootstrap/js/bootstrap.min.js"></script>
+    <script src="../../jquery/jquery-3.2.0.min.js"></script>
+    <script src="../../bootstrap/js/bootstrap.min.js"></script>
+    <script src="../MyJs/HomeFunction.js"></script>
+    <script src="../MyJs/JsTable/bootstrap-table.js"></script>
+</head>
+<body>
+<div class="container" style="margin-top: 5%">
+    <div class="row">
+        <form role="form" class="col-lg-offset-2 col-md-offset-2 col-xs-offset-2 col-sm-offset-2">
+            <div class="form-inline">
+                <label class="control-label">请选择数据质量评估编号：</label>
+                <select class="form-control" style="width: 70%">
+                    <option>请选择</option>
+                    <option>00000001</option>
+                </select>
+            </div>
+            <br>
+            <div class="form-inline">
+                <label class="control-label" >请选择评估模板：</label>
+                <select class="form-control" style="width: 75%">
+                    <option>请选择</option>
+                    <option>模板1</option>
+                    <option>模板2</option>
+                </select>
+            </div>
+            <br>
+            <div class="form-group" style="width:80%">
+                <div class="form-inline">
+                    <label class="control-label">请选择所属类别：</label>
+                    <select class="form-control">
+                        <option selected>内部属性</option>
+                        <option>外部属性</option>
+                        <option>使用属性</option>
+                    </select>
+                    <select class="form-control">
+                        <option selected>完整性</option>
+                        <option>丰富性</option>
+                        <option>规范性</option>
+                        <option>一致性</option>
+                    </select>
+                    <select class="form-control">
+                        <option selected>属性完整性</option>
+                        <option>记录完整性</option>
+                        <option>关系完整性</option>
+                    </select>
+                    <select class="form-control">
+                        <option selected>诊断编码</option>
+                        <option>年龄</option>
+                        <option>性别</option>
+                    </select>
+                    <button type="button" class="btn btn-default">添加</button>
+                    <button type="button" class="btn btn-warning">删除选中行</button>
+                </div >
+                <br>
+                <table class="table table-bordered" data-toggle="table" data-url="../MyData/datatable2.json">
+                    <thead>
+                    <tr>
+                        <th data-field="state" data-checkbox="true"></th>
+                        <th data-field="fieldname">字段</th>
+                        <th data-field="subattribute">子维度</th>
+                        <th data-field="Regulation">评估依据</th>
+                        <th data-field="EvaluateAuto" >自动评估</th>
+                        <th data-field="EvaluateManual">人工评估</th>
+                        <th data-field="method" data-align="center">算法设定</th>
+                    </tr>
+                    </thead>
+                </table>
+                <button type="button" class="btn btn-default" data-toggle="modal" data-target="#MyAttributes">添加维度</button>
+                <button type="button" class="btn btn-default" data-toggle="modal" data-target="#MySubAttributes">添加子维度</button>
+                <button type="button" class="btn btn-default" >添加字段</button>
+                <br>
+                <br>
+                <button type="button" class="btn btn-primary">确认</button>
+            </div>
+
+        </form>
+
+    </div>
+
+</div>
+</body>
+</html>

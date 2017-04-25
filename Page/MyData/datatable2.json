@@ -2,6 +2,7 @@
   {
     "fieldname": "诊断编码",
     "subattribute": "属性完整性",
+    "Regulation":"样本数据1",
     "EvaluateAuto": "是",
     "EvaluateManual": "    ",
     "method":"方法1"
@@ -9,6 +10,7 @@
   {
     "fieldname": "年龄",
     "subattribute": "属性完整性",
+    "Regulation":"样本数据2",
     "EvaluateAuto": "是",
     "EvaluateManual": "   ",
     "method":"方法2"
@@ -16,6 +18,7 @@
   {
     "fieldname": "性别",
     "subattribute": "属性完整性",
+    "Regulation":"样本数据3",
     "EvaluateAuto": "",
     "EvaluateManual": " 是",
     "method":"方法3"
@@ -23,6 +26,7 @@
   {
     "fieldname": "诊断编码",
     "subattribute": "属性规范性",
+    "Regulation":"正则表达式1",
     "EvaluateAuto": "是",
     "EvaluateManual": "",
     "method":"方法4"

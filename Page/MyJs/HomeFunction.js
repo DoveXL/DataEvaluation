@@ -48,6 +48,14 @@ function ToCreateTemplate() {
     $("#iframe1").attr("src","CreateTemplate.html");
 }
 
+function ToConfigureManagement() {
+    $("#iframe1").attr("src","ConfigureManagement.html");
+}
+
+function ToRegulationManage() {
+    $("#iframe1").attr("src","RegulationManage.html");
+}
+
 function ToModifyTemplate() {
     $("#iframe1").attr("src","ModifyTemplate.html");
 }
@@ -104,12 +112,25 @@ function ToMetricModal(row) {
 
 function InsertDiv() {
     $("#Myform").append($("#clone1").clone());
-
 }
 
 function InsertDiv1() {
-    $("#form1").append($("#div1").clone());
+    $("#Myform1").append($("#clone2").clone());
 
+}
+
+function displayform() {
+    $("#Myform").css("display","block");
+    $("#Myform1").css("display","none");
+    $("#radiobtn2").css("display","none");
+    $("#radiobtn1").css("display","block");
+}
+
+function displayform1() {
+    $("#Myform1").css("display","block");
+    $("#Myform").css("display","none");
+    $("#radiobtn2").css("display","block");
+    $("#radiobtn1").css("display","none");
 }
 
 function ToMethods() {
@@ -117,12 +138,9 @@ function ToMethods() {
 
 }
 
-function ToChooseMetricsAuto() {
-    $("#iframe1").attr("src","ChooseMetricAuto.html")
-}
+function ToAutoEvaluation() {
+    $("#iframe1").attr("src","AutoEvaluation.html")
 
-function ToChooseMetricsManual() {
-    $("#iframe1").attr("src","ChooseMetricManual.html")
 }
 
 function ToChooseEvaluationPerson() {
